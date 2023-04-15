@@ -5900,6 +5900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DemoPlayer00
       objectReference: {fileID: 0}
+    - target: {fileID: 1614269734683862, guid: ea9f5ee1882006644944ac42a1b7f868, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4305230339876764, guid: ea9f5ee1882006644944ac42a1b7f868, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -6301,6 +6305,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 215e798bef4c94648a9bdfb13d6042f4, type: 3}
+--- !u!1 &897926294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1450711633889990, guid: 76a42af4f281d234c97adf18e596b447, type: 3}
+  m_PrefabInstance: {fileID: 2086305112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &897926300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897926294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6373abcc9f1f11f41b1b364e792043ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  isInside: 1
+  damagePerSecond: 1
+  damageDelay: 1
 --- !u!1001 &898731081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14610,6 +14635,27 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1deed74c902a7634ea86265df65f6df1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: debcce6af33ad3e40835b6538c57dbe4, type: 3}
+--- !u!1 &2004195808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1614269734683862, guid: ea9f5ee1882006644944ac42a1b7f868, type: 3}
+  m_PrefabInstance: {fileID: 838777368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2004195814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004195808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6373abcc9f1f11f41b1b364e792043ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  isInside: 1
+  damagePerSecond: 1
+  damageDelay: 1
 --- !u!1001 &2010631208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15183,6 +15229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ch_0CP00M00W
       objectReference: {fileID: 0}
+    - target: {fileID: 1450711633889990, guid: 76a42af4f281d234c97adf18e596b447, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4743226959276962, guid: 76a42af4f281d234c97adf18e596b447, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -15226,6 +15276,10 @@ PrefabInstance:
     - target: {fileID: 4743226959276962, guid: 76a42af4f281d234c97adf18e596b447, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 136701845710356518, guid: 76a42af4f281d234c97adf18e596b447, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76a42af4f281d234c97adf18e596b447, type: 3}

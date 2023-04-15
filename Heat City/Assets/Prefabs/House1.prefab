@@ -4839,6 +4839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9130296290852810452}
   - component: {fileID: 6001802328820870284}
+  - component: {fileID: 2918309935532634369}
   m_Layer: 0
   m_Name: EntryColliders
   m_TagString: Untagged
@@ -4874,6 +4875,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1614418, y: 2.560181, z: 1}
   m_Center: {x: 0.33592415, y: 0.33230793, z: 0}
+--- !u!114 &2918309935532634369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7631801559673885221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d17cc4ae666ff439691c01ed83827b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSunDoDamage: 0
 --- !u!1 &7964927505263603017
 GameObject:
   m_ObjectHideFlags: 0
@@ -5505,6 +5519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8659113309424434718}
   - component: {fileID: 5405655641694443238}
+  - component: {fileID: 4601414593510154914}
   m_Layer: 0
   m_Name: SunCollider
   m_TagString: Untagged
@@ -5540,6 +5555,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1614418, y: 2.560181, z: 1}
   m_Center: {x: 0.33592415, y: 0.33230793, z: 0}
+--- !u!114 &4601414593510154914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8961926759544879846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d17cc4ae666ff439691c01ed83827b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSunDoDamage: 1
 --- !u!1 &9188375768781198002
 GameObject:
   m_ObjectHideFlags: 0
