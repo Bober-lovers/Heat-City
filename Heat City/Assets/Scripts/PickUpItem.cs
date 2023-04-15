@@ -45,7 +45,9 @@ public class PickUpItem : MonoBehaviour
                 {
                     item = toPickUp;
                     item.SetParent(hands);
-                    item.transform.localPosition = new Vector3(0, -0.25f, 0.5f);
+                    Vector3 position = item.gameObject.GetComponent<MeshRenderer>().bounds.size/2;
+                    position.y = -item.gameObject.GetComponent<MeshRenderer>().bounds.size.y/2;
+                    item.localPosition = position;
                     holdItem = true;
                     //tutaj zmieñmy jeszcze animacjê na chodzenie z itemem ale to nie teraz, teraz to mi siê nie chce
                 }
