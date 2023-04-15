@@ -26,8 +26,6 @@ public class PlayerStats : MonoBehaviour
                 actualHealth -= damagePerSecond;
 
                 nextDamageTime = Time.time + damageDelay;
-                Debug.Log(nextDamageTime);
-                Debug.Log(actualHealth.ToString());
             }
 
         }

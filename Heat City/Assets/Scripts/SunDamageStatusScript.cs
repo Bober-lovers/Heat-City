@@ -8,10 +8,13 @@ public class SunDamageStatusScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player has entered the house");
+            PlayerStats stats = other.GetComponent<PlayerStats>();
+            if (stats != null)
+            {
+                stats.SetInsideStatus(!isSunDoDamage);
+            }
         }
     }
 }
