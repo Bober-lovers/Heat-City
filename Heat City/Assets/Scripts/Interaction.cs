@@ -21,6 +21,7 @@ public class Interaction : MonoBehaviour
     {
         if(other.name == "PickUpArea")
         {
+            Debug.Log("interakcja mo¿liwa");
             itemController = other.transform.GetComponent<PickUpItem>();
         }
     }

@@ -45,8 +45,15 @@ public class PickUpItem : MonoBehaviour
                 {
                     item = toPickUp;
                     item.SetParent(hands);
-                    Vector3 position = item.gameObject.GetComponent<MeshRenderer>().bounds.size/2;
-                    position.y = -item.gameObject.GetComponent<MeshRenderer>().bounds.size.y/2;
+                    Vector3 position = item.localPosition;
+                    Debug.Log(position);
+                    position.z = 0.7f;
+                    item.GetComponent<Collider>().enabled = false;
+                    Collider[] collider = item.GetComponentsInChildren<Collider>();
+                    foreach(Collider collider1 in collider)
+                    {
+                        collider1.enabled = false;
+                    }
                     item.localPosition = position;
                     holdItem = true;
                     //tutaj zmieñmy jeszcze animacjê na chodzenie z itemem ale to nie teraz, teraz to mi siê nie chce
@@ -59,8 +66,15 @@ public class PickUpItem : MonoBehaviour
     {
         item.SetParent(null);
         item.position = position;
+        item.GetComponent<Collider>().enabled = true;
+        Collider[] collider = item.GetComponentsInChildren<Collider>();
+        foreach (Collider collider1 in collider)
+        {
+            collider1.enabled = true;
+        }
         item = null;
         holdItem = false;
+
     }
 
     private void OnTriggerEnter(Collider other)
