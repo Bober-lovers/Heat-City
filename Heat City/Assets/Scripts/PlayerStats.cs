@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -31,7 +32,10 @@ public class PlayerStats : MonoBehaviour
                 HealthSystem.Damage(damagePerSecond);
 
                 nextDamageTime = Time.time + damageDelay;
-                Debug.Log(HealthSystem.GetHealth());
+                if (HealthSystem.GetHealthNormalized() == 0)
+                {
+                    SceneManager.LoadScene("Level");
+                }
             }
 
         }
