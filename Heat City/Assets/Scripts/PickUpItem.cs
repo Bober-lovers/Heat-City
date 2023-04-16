@@ -34,7 +34,7 @@ public class PickUpItem : MonoBehaviour
                 else
                 {
                     //jeœli trzyma przedmiot to puszcza trzymany
-                    DropItem(item.position);
+                    DropItem(item.position, item.rotation);
                 }
             }
             //jeœli nie trzyma
@@ -62,10 +62,11 @@ public class PickUpItem : MonoBehaviour
         }
     }
 
-    public void DropItem(Vector3 position)
+    public void DropItem(Vector3 position, Quaternion rotation)
     {
         item.SetParent(null);
         item.position = position;
+        item.rotation = rotation;
         item.GetComponent<Collider>().enabled = true;
         Collider[] collider = item.GetComponentsInChildren<Collider>();
         foreach (Collider collider1 in collider)

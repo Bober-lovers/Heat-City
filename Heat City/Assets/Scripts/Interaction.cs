@@ -13,6 +13,8 @@ public class Interaction : MonoBehaviour
 
     [SerializeField]
     Vector3 newItemPosition;
+    [SerializeField]
+    Quaternion newItemRotation;
 
     [SerializeField]
     bool dropItem;
@@ -33,7 +35,7 @@ public class Interaction : MonoBehaviour
             itemController.item.name = newItemName;
             if (dropItem)
             {
-                itemController.DropItem(newItemPosition);
+                itemController.DropItem(newItemPosition, newItemRotation);
             }
         }
         //od³o¿enie przedmiotu lub zmiana jego nazwy
