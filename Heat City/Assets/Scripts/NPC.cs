@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class Dialogue
@@ -66,5 +67,10 @@ public class NPC : MonoBehaviour
         quest[questNumber].questStatus = QuestStatus.Ended;
         DialogueManager.instance.endQuest();
         questNumber++;
+
+        if (questNumber==4)
+        {
+            SceneManager.LoadScene("finish");
+        }
     }
 }
