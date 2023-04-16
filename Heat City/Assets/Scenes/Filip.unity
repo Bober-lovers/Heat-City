@@ -3534,34 +3534,43 @@ MonoBehaviour:
   npcDialogueColor: {r: 0.36739826, g: 0.94509804, b: 0.35294116, a: 1}
   questNumber: 0
   quest:
-  - namePL: Sasiad
-    nameENG: Neighbor
-    descriptionPL: Sasiad ma problem
-    descriptionENG: Neighbor has a problem
+  - namePL: Grandpa
+    nameENG: 
+    descriptionPL: Air conditioner
+    descriptionENG: 
     descriptionAfterItemPL: 
     descriptionAfterItemENG: 
     questStatus: 0
     item: {fileID: 3470988166933443747}
     startQuestDialogues:
-    - textPL: "O dobrze \u017Ce przyszed\u0142e\u015B."
-      textENG: Oh! Good to see you.
+    - textPL: 'Good morning grandson, I need your help. Our air conditioner is broken...
+        again. '
+      textENG: 
       playerTalking: 0
-    - textPL: "Co si\u0119 sta\u0142o?"
-      textENG: What happened?
+    - textPL: 'ugh... again? '
+      textENG: 
       playerTalking: 1
-    - textPL: "Ostatnia wichura przewr\xF3ci\u0142a m\xF3j zbiornik na deszcz\xF3wk\u0119,
-        i nie mog\u0119 go podnie\u015B\u0107."
-      textENG: Last storm knocked over my rainwater tank, and I can't lift it.
-      playerTalking: 0
-    - textPL: "A bez niego moje ro\u015Bliny uschn\u0105."
-      textENG: And without it my plants will wither.
-      playerTalking: 0
-    - textPL: "Pom\xF3g\u0142by\u015B?"
-      textENG: Could you help me?
-      playerTalking: 0
-    - textPL: W zasadzie czemu nie.
-      textENG: Sure, why not.
+    - textPL: What is it this time?
+      textENG: 
       playerTalking: 1
+    - textPL: The fan unscrewed, wrench is in the garden
+      textENG: 
+      playerTalking: 0
+    - textPL: Can you repair it?
+      textENG: 
+      playerTalking: 0
+    - textPL: Ugh... ok.
+      textENG: 
+      playerTalking: 1
+    - textPL: In the end I don't have anything better to do.
+      textENG: 
+      playerTalking: 1
+    - textPL: Just be careful, it's very hot today and the sun can hurt you.
+      textENG: 
+      playerTalking: 0
+    - textPL: Try to stay in the shadows to avoid it.
+      textENG: 
+      playerTalking: 0
     whileQuestDialogues:
     - textPL: "Jestem za stary aby podnie\u015B\u0107 ten zbiornik"
       textENG: I'm too old to lift this container
